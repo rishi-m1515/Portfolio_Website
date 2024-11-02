@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    border: 0;
+    height: 500vh;
+}
+
+.landing-page-section {
+    padding: 100px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    /* background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(9, 200, 168, 0.142));
+    height: 40vh; */
+}
+
+.name-box {
+    font-family: Roboto, sans-serif;
+}
+
+.pre-name, .pre-name2, .post-name {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    
+    padding-left: 5px;
+}
+
+.pre-name2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.post-name {
+    font-size: 1.5em;
+    margin-top: -10px;
+    text-align: right;
+}
+
+.name {
+    margin: 0;
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(9, 200, 9);
+}
