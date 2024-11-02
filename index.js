@@ -1,4 +1,4 @@
-import { electronicProjectsData, softwareProjectsData } from "./projectsData.js";
+import { electronicProjectsData, softwareProjectsData } from "./data/projectsData.js";
 
 /*
 scrolling - section 0 to header 
@@ -17,6 +17,7 @@ function scrollFunction() {
     document.querySelector(".name").style.fontSize = "5em";
   }
 } */
+
 
 window.onload = function() {
     document.querySelector('.name').classList.add('visible');
