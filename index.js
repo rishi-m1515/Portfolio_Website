@@ -1,30 +1,10 @@
 import { electronicProjectsData, softwareProjectsData } from "./data/projectsData.js";
 
-/*
-scrolling - section 0 to header 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector(".section-0").style.padding = "20px";
-    document.querySelector(".name-box-line1").style.opacity = "0";
-    document.querySelector(".name-box-line2").style.display = "none";
-    document.querySelector(".name").style.fontSize = "1.5em";
-  } else {
-    document.querySelector(".section-0").style.padding = "150px";
-    document.querySelector(".name-box-line1").style.opacity = "1";
-    document.querySelector(".name-box-line2").style.display = "block";
-    document.querySelector(".name").style.fontSize = "5em";
-  }
-} */
-
-
 window.onload = function() {
     document.querySelector('.name').classList.add('visible');
 };
 
 loadElectronicsProjects();
-
 function loadElectronicsProjects() {
     let projectshtml = ``;
     electronicProjectsData.forEach(project => {
@@ -47,8 +27,6 @@ function loadElectronicsProjects() {
     });
 }
 
-
-
 loadSoftwareProjects();
 function loadSoftwareProjects() {
     let projectshtml2 = ``;
@@ -70,4 +48,22 @@ function loadSoftwareProjects() {
         `;
         document.querySelector('.software-projects').innerHTML = projectshtml2;
     });
+}
+
+let mybutton = document.querySelector('.home-button');
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+window.topFunction = topFunction;
+
+function topFunction() {
+  console.log("topfunc");
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
