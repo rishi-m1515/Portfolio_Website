@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    min-height: 350vh;
+    min-height: 400vh;
     font-family: Roboto, sans-serif;
     background-color: rgb(244, 244, 244);
 }
@@ -75,7 +75,7 @@ body {
     justify-content: space-evenly;
 }
 
-.nav-button {
+.nav-button, .resume-link {
     text-decoration: none;
     border: 3px solid;
     border-color: white;
@@ -90,11 +90,39 @@ body {
     transition: 0.15s;
 }
 
-.nav-button:hover {
+.resume-link {
+    margin-top: 20px;
+    background-color:rgb(9, 200, 9);
+    text-transform: none;
+    padding: 20px 40px;
+}
+
+.nav-button:hover, .resume-link:hover {
     cursor: pointer;
     border: 3px solid black;
     color: black;
     background-color: white;
+}
+
+.about-me-section {
+    margin: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Bona Nova SC';
+}
+
+.info-para {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    width: 70%;
+    text-align: center;
 }
 
 .projects-main-heading {

@@ -14,7 +14,7 @@ export const electronicProjectsData = [
     {
         "id-name": "cnn-fpga",
         "title": "CNN on FPGA for Image Recognition",
-        "description": "An implementation of Convolutional Neural Networks (CNN) with parallel processing on FPGA.It was hardcoded to detect an 'X' or an 'O' in an image. This project is a proof of concept for parallel processing capabilities of FPGAs.",
+        "description": "An implementation of Convolutional Neural Networks (CNN) with parallel processing on FPGA. It was hardcoded to detect an 'X' or an 'O' in an image. This project was done as a proof of concept for parallel processing capabilities of FPGAs.",
         "image": "images/cnn-fpga-image.jpg"
     },
     {
@@ -29,13 +29,19 @@ export const softwareProjectsData = [
     {
         "id-name": "legacy-document-migration",
         "title": "Automation of Legacy Document Migration",
-        "description": "Automation of legacy document migration by document manipulation using Microsoft Visual Basic Code with macros. This can process hundreds of files in a matter of minutes, more efficient that python. A project that has real applications.",
-        "image": "images/self-balancing-robot-image.jpg"
+        "description": "This project had real applications. Legacy document migration can be a monotonous process. Documents in old verisions of Microsoft Office Apps had to be converted to newer versions with new changes. This process was automated using Microsoft Visual Basic code with macros. Hundreds of files were processed in a matter of minutes, being more efficient than python.",
+        "image": "images/legacy-document-migration-image.webp"
     },
     {
         "id-name": "amazon-clone",
         "title": "Amazon Website Clone",
         "description": "First step towards full-stack web-development. This guided project was part of my internship at NIT Warangal. It was made using HTML, CSS and vanilla JavaScript. Product data was brought from another website using api.",
         "image": "images/amazon-image.png"
+    },
+    {
+        "id-name": "this-website",
+        "title": "This Website",
+        "description": "Obviously 😙",
+        "image": "images/this-website-image.png"
     }
 ];
