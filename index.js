@@ -1,4 +1,4 @@
-import { electronicProjectsData } from "./projectsData.js";
+import { electronicProjectsData, softwareProjectsData } from "./projectsData.js";
 
 /*
 scrolling - section 0 to header 
@@ -23,11 +23,12 @@ window.onload = function() {
 };
 
 loadElectronicsProjects();
+
 function loadElectronicsProjects() {
     let projectshtml = ``;
     electronicProjectsData.forEach(project => {
         projectshtml += `
-            <div class="e-project-container ${project['id-name']}">
+            <div class="project-container ${project['id-name']}">
                 <div class="project-text-container">
                     <div class="heading-container">
                         <h3>${project['title']}</h3>
@@ -42,5 +43,30 @@ function loadElectronicsProjects() {
             </div>
         `;
         document.querySelector('.electronic-projects').innerHTML = projectshtml;
+    });
+}
+
+
+
+loadSoftwareProjects();
+function loadSoftwareProjects() {
+    let projectshtml2 = ``;
+    softwareProjectsData.forEach(project => {
+        projectshtml2 += `
+            <div class="project-container ${project['id-name']}">
+                <div class="project-text-container">
+                    <div class="heading-container">
+                        <h3>${project['title']}</h3>
+                    </div>
+                    <div class="paragraph-container">
+                        <p>${project['description']}</p>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src=${project['image']}>
+                </div>
+            </div>
+        `;
+        document.querySelector('.software-projects').innerHTML = projectshtml2;
     });
 }

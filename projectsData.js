@@ -24,3 +24,18 @@ export const electronicProjectsData = [
         "image": "images/digital-clock-image.jpg"
     }
 ];
+
+export const softwareProjectsData = [
+    {
+        "id-name": "legacy-document-migration",
+        "title": "Automation of Legacy Document Migration",
+        "description": "Automation of legacy document migration by document manipulation using Microsoft Visual Basic Code with macros. This can process hundreds of files in a matter of minutes, more efficient that python. A project that has real applications.",
+        "image": "images/self-balancing-robot-image.jpg"
+    },
+    {
+        "id-name": "amazon-clone",
+        "title": "Amazon Website Clone",
+        "description": "First step towards full-stack web-development. This guided project was part of my internship at NIT Warangal. It was made using HTML, CSS and vanilla JavaScript. Product data was brought from another website using api.",
+        "image": "images/amazon-image.png"
+    }
+];

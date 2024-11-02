@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC&family=Roboto:wght@300;400&display=swap');
+
 * {
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    min-height: 500vh;
+    min-height: 350vh;
     font-family: Roboto, sans-serif;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(244, 244, 244);
 }
 
 .landing-page-section {
@@ -59,7 +65,7 @@ body {
     font-size: 5em;
 }
 
-.section-1 {
+.navigation-section {
     padding: 20px;
 }
 
@@ -70,6 +76,7 @@ body {
 }
 
 .nav-button {
+    text-decoration: none;
     border: 3px solid;
     border-color: white;
     background-color: black;
@@ -79,7 +86,7 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 20px 250px;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: 0.15s;
 }
 
@@ -93,13 +100,17 @@ body {
 .projects-main-heading {
     font-size: 2em;
     margin: 20px;
+    font-family: 'Bona Nova SC';
 }
 
-.electronics {
+.electronics, .software {
     margin: 40px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+    transition: all 0.5s;
 }
 
-.e-project-container {
+.project-container {
     background-color:rgb(9, 200, 9);
     border-radius: 10px;
     margin-bottom: 20px;
@@ -147,50 +158,49 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
+    object-position: center;
     display: block;
     transition: all 0.5s;
 }
 
-.e-project-container:hover {
+.project-container:hover {
     cursor: pointer;
     background-color: white;
-    height: 350px;
+    height: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.e-project-container:hover .project-text-container {
+.project-container:hover .project-text-container {
     flex: 1.5;
     justify-content: flex-start;
 }
 
-.e-project-container:hover .heading-container {
+.project-container:hover .heading-container {
     color:rgb(9, 200, 9);
     margin-bottom: 30px;
     font-size: 1.5em;
-    padding-left: 0;
+    padding-top: 20px;
 }
 
-.e-project-container:hover .paragraph-container {
+.project-container:hover .paragraph-container {
     display: block;
     font-size: 1.5rem;
-    padding-right: 20px;
+    padding-left: 20px;
     width: auto;
     height: auto;
     visibility: visible;
-    text-align: justify;
-    max-width: 60%;
+    max-width: 70%;
     opacity: 1;
 }
 
-.e-project-container:hover .project-image-container {
+.project-container:hover .project-image-container {
     flex: 1;
 }
 
-.e-project-container:hover .project-image-container img {
+.project-container:hover .project-image-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: bottom;
 }
-
 
