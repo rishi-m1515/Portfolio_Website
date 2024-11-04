@@ -9,7 +9,7 @@ function loadElectronicsProjects() {
     let projectshtml = ``;
     electronicProjectsData.forEach(project => {
         projectshtml += `
-            <div class="project-container ${project['id-name']}">
+            <a href="HTML_Files/${project['id-name']}.html" class="project-container ${project['id-name']}">
                 <div class="project-text-container">
                     <div class="heading-container">
                         <h3>${project['title']}</h3>
@@ -21,7 +21,7 @@ function loadElectronicsProjects() {
                 <div class="project-image-container">
                     <img src=${project['image']}>
                 </div>
-            </div>
+            </a>
         `;
         document.querySelector('.electronic-projects').innerHTML = projectshtml;
     });
@@ -32,7 +32,7 @@ function loadSoftwareProjects() {
     let projectshtml2 = ``;
     softwareProjectsData.forEach(project => {
         projectshtml2 += `
-            <div class="project-container ${project['id-name']}">
+            <a href="HTML_Files/${project['id-name']}.html" class="project-container ${project['id-name']}">
                 <div class="project-text-container">
                     <div class="heading-container">
                         <h3>${project['title']}</h3>
@@ -44,7 +44,7 @@ function loadSoftwareProjects() {
                 <div class="project-image-container">
                     <img src=${project['image']}>
                 </div>
-            </div>
+            </a>
         `;
         document.querySelector('.software-projects').innerHTML = projectshtml2;
     });

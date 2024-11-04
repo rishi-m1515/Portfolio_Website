@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Self-Balancing Robot</title>
+    <title>Automation of Legacy Document Migration</title>
     <link rel="stylesheet" href="../CSS_Files/description-page.css">
 </head>
 <body>
-    <a href="../index.html" class="back-button">
-        Back
-    </a>
+    <section class="back-button-section">
+        <a href="../index.html" class="back-button">
+            Back
+        </a>
+    </section>
 
     <section class="description-section">
         
     </section>
 
-    <a href="../index.html" class="back-button">
-        Back
-    </a>
+    <section class="back-button-section">
+        <a href="" class="back-button">
+            Back
+        </a>
+    </section>
 
     <script type="module" src="../data/projectsData.js"></script>
     <script type="module">
         import {descriptionData} from "../data/projectsData.js";
         document.querySelector('.description-section').innerHTML =
         `
-            <h1>${descriptionData['self-balancing-robot']['title']}</h1>
+            <h1>${descriptionData['legacy-document-migration']['title']}</h1>
             <p class="description-para">
-                ${descriptionData['self-balancing-robot']['description']}    
+                ${descriptionData['legacy-document-migration']['description']}    
             </p>
             <div class='download-options'>
-                <a target="_blank" href="https://docs.google.com/presentation/d/1J_viGlEtf9rKl5Kb7GMxXFrO729DdM8Y5bNYzyTX9W8/edit?usp=sharing">
+                <a target="_blank" href="./no-update.html">
                     <img class="ppt-icon" src="../icons/pdf-icon.png"/>
                 </a>
-                <a target="_blank" href="https://drive.google.com/file/d/1UVHWiaWhDZh77IOrgMLvVJrgRmrOG3R9/view?usp=drive_link">
+                <a target="_blank" href="./no-update.html">
                     <img class="pdf-icon" src="../icons/ppt-icon.png"/>
                 </a>
             </div>

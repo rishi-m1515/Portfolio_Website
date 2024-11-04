@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
 * {
     margin: 0;
     border: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,7 +13,7 @@ html {
 
 body {
     min-height: 400vh;
-    font-family: Roboto, sans-serif;
+    font-family: 'Fauna One' ,Roboto, sans-serif;
     background-color: rgb(244, 244, 244);
 }
 
@@ -119,7 +120,7 @@ body {
 .info-heading {
     font-size: 2em;
     margin-bottom: 20px;
-    font-family: 'Bona Nova SC';
+    font-family: Cinzel, Roboto, serif;
 }
 
 .info-para {
@@ -132,7 +133,7 @@ body {
 .projects-main-heading {
     font-size: 2em;
     margin: 20px;
-    font-family: 'Bona Nova SC';
+    font-family: Cinzel, Roboto, serif;
 }
 
 .electronics, .software {
@@ -150,6 +151,7 @@ body {
     flex-direction: row;
     overflow: hidden;
     height: 150px;
+    text-decoration: none;
     transition: all 0.5s;
 }
 
@@ -174,6 +176,7 @@ body {
     width: 0;
     height: 0;
     opacity: 0;
+    color: black;
     visibility: hidden;
 }
 

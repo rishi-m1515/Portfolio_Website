@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Fauna One' ,Roboto, sans-serif;
+    background-color: rgb(244, 244, 244);
+    padding: 40px;
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(9, 200, 9);
+    padding: 20px;
+    margin-top: 40px;
+    width: 200px;
+    border-radius: 50px;
+    border: 3px solid white;
+    transition: all 0.15s;
+}
+
+.back-button:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.description-section {
+    margin-left: 40px;
+    margin-top: 50px;
+    min-height: 50vh;
+}
+
+.description-section h1 {
+    font-size: 3vw;
+}
+
+.description-para {
+    margin-top: 30px;
+    max-width: 75%;
+    line-height: 30px;
+}
+
+.download-options {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+}
+
+.ppt-icon, .pdf-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 50px;
+    margin: 50px;
+    transition: all 0.15s;
+}
+
+.ppt-icon:hover , .pdf-icon:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
