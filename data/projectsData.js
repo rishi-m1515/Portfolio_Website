@@ -43,6 +43,18 @@ export const softwareProjectsData = [
         "title": "This Website",
         "description": "Obviously 😙",
         "image": "images/this-website-image.png"
+    },
+    {
+        "id-name": "blog-website",
+        "title": "Blog Website (Guided)",
+        "description": "A full-featured blog website with a server and database, supporting dynamic page rendering and full CRUD operations for posts.",
+        "image": ""
+    },
+    {
+        "id-name": "hapto",
+        "title": "Haptado Shopping System",
+        "description": "A software + hardware prototype for a startup idea for fast and secure checkouts at supermarkets, handling full CRUD operations.",
+        "image": ""
     }
 ];
 

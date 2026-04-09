@@ -265,5 +265,60 @@ body {
     bottom: 0px;
 }
 
+.maintenance-card {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 10000; /* Ensure it stays above everything */
+    max-width: 350px;
+    border-left: 6px solid rgb(9, 200, 9);
+    animation: slideIn 0.8s ease-out;
+    pointer-events: auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.maintenance-title {
+    margin: 0 0 8px 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.5px;
+}
+
+.maintenance-desc {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .maintenance-card {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+}
+
+
 
 
